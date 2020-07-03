@@ -1,0 +1,161 @@
+.btn__call {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #5cb3a2;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 28px;
+  border: none;
+  box-shadow: 0;
+  animation: buttonAnimation 2s infinite;
+  overflow: hidden;
+}
+.btn__call:hover {
+  cursor: pointer;
+}
+
+.btn__call .fas,
+.call__back_text {
+  position: absolute;
+}
+.btn__call .fas {
+  top: 36%;
+  left: 36%;
+}
+.btn__call .fas {
+  animation: phoneAnimation 7s infinite;
+}
+.call__back_text {
+  top: 30%;
+  left: 30%;
+  font-size: 0;
+  opacity: 0;
+  animation: textAnimation 7s infinite;
+}
+
+@keyframes phoneAnimation {
+  0% {
+    transform: rotate(0);
+    font-size: 28px;
+    top: 36%;
+    left: 36%;
+  }
+  10% {
+    transform: rotate(-15deg);
+    top: 36%;
+    left: 36%;
+  }
+  20% {
+    transform: rotate(0);
+    top: 36%;
+    left: 36%;
+  }
+  30% {
+    transform: rotate(-25deg);
+    font-size: 28px;
+    top: 36%;
+    left: 36%;
+  }
+  45% {
+    transform: rotate(360deg);
+    font-size: 0;
+    top: 50%;
+    left: 50%;
+  }
+  65% {
+    transform: rotate(360deg);
+    font-size: 0;
+    top: 36%;
+    left: 36%;
+  }
+  75% {
+    transform: rotate(360deg);
+    font-size: 0;
+  }
+  95% {
+    transform: rotate(-25deg);
+    font-size: 0;
+  }
+  100% {
+    transform: rotate(360deg);
+    font-size: 28px;
+  }
+}
+
+@keyframes textAnimation {
+  0% {
+    top: 50%;
+    left: 50%;
+    font-size: 0;
+    opacity: 0;
+  }
+  10% {
+    top: 50%;
+    left: 50%;
+    font-size: 0;
+    opacity: 0;
+  }
+  20% {
+    top: 50%;
+    left: 50%;
+    font-size: 0;
+    opacity: 0;
+  }
+  30% {
+    transform: rotate(0);
+    top: 50%;
+    left: 50%;
+    font-size: 0;
+    opacity: 1;
+  }
+  40% {
+    transform: rotate(360deg);
+    top: 30%;
+    left: 0;
+    font-size: 18px;
+    opacity: 1;
+  }
+  45% {
+    transform: rotate(360deg);
+    top: 30%;
+    left: 0;
+    font-size: 18px;
+    opacity: 1;
+  }
+  75% {
+    transform: rotate(360deg);
+    top: 30%;
+    left: 0;
+    font-size: 18px;
+    opacity: 1;
+  }
+  95% {
+    transform: rotate(360deg);
+    top: 30%;
+    left: 0;
+    font-size: 18px;
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(0);
+    top: 50%;
+    left: 50%;
+    font-size: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes buttonAnimation {
+  0% {
+    box-shadow: 0;
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(92, 179, 162, 0.2);
+  }
+  100% {
+    box-shadow: 0;
+  }
+}
